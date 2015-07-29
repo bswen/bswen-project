@@ -30,7 +30,7 @@ public class MyService implements CommandLineRunner {
             while(true) {
                 Thread.sleep(2*1000);
                 List<User> users = userDao.queryUsers();
-                log.info("MySQL db has "+(users==null?0:users.size())+" users.");
+                log.debug("MySQL db has "+(users==null?0:users.size())+" users.");
             }
         }catch (Exception ex) {
              log.error("Error occurred.",ex);

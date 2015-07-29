@@ -9,8 +9,9 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-boot-0726</module>
+        <module>spring-io-mvc-0728</module>
     </modules>
     <packaging>pom</packaging>
 
-    
+
 </project>
