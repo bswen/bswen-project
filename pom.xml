@@ -10,6 +10,9 @@
     <modules>
         <module>spring-boot-0726</module>
         <module>spring-io-mvc-0728</module>
+        <module>spring-boot-0801</module>
+        <module>spring-boot-sample-web-jsp</module>
+        <module>spring-boot-restful-0908</module>
     </modules>
     <packaging>pom</packaging>
 

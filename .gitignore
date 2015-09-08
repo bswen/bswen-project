@@ -5,3 +5,10 @@
 /spring-io-mvc-0728
 /*.log
 /spring-boot-0726/target
+/.gradle
+/gradle-0825
+/spring-boot-0801
+/spring-boot-sample-web-jsp
+/spring-boot-restful-0908/target/maven-archiver
+*.jar
+/spring-boot-restful-0908/target
