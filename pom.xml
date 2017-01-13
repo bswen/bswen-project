@@ -20,6 +20,7 @@
         <module>spring-boot-sample-web-jsp</module>
         <module>spring-boot-restful-0908</module>
         <module>java8-learning</module>
+        <module>spring-boot-multidatasource</module>
     </modules>
     <packaging>pom</packaging>
 

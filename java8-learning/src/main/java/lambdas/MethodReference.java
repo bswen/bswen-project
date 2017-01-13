@@ -6,9 +6,9 @@ import java.util.List;
 import static java.util.Comparator.comparing;
 
 /**
- * Created by zhaocw on 2017-1-12.
+ * Created by xx on 2017-1-12.
  *
- * @author zhaocw
+ * @author xx
  */
 public class MethodReference {
     public static void main(String[] args) {

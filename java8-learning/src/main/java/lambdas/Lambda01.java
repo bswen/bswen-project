@@ -4,9 +4,9 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 
 /**
- * Created by zhaocw on 2017-1-9.
+ * Created by xx on 2017-1-9.
  *
- * @author zhaocw
+ * @author xx
  */
 public class Lambda01 {
 

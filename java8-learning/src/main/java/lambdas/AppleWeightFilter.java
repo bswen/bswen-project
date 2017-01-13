@@ -1,9 +1,9 @@
 package lambdas;
 
 /**
- * Created by zhaocw on 2017-1-6.
+ * Created by xx on 2017-1-6.
  *
- * @author zhaocw
+ * @author xx
  */
 public class AppleWeightFilter implements IAppleFilter {
     private final int weight;
