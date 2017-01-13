@@ -12,3 +12,4 @@
 /spring-boot-restful-0908/target/maven-archiver
 *.jar
 /spring-boot-restful-0908/target
+/spring-boot-multidatasource/*.log
