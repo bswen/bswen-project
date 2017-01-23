@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.bswen</groupId>
-    <artifactId>sboot0726</artifactId>
+    <artifactId>sprint-boot-dao</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 <!--
@@ -29,7 +29,7 @@
                 <!-- Import dependency management from Spring Boot -->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>1.2.5.RELEASE</version>
+                <version>1.4.3.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -37,10 +37,11 @@
     </dependencyManagement>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
-            <groupId>com.mysql.jdbc</groupId>
-            <artifactId>mysql-connector</artifactId>
-            <version>5.1.22</version>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.39</version>
         </dependency>
         <dependency>
             <groupId>com.zaxxer</groupId>
@@ -58,6 +59,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>1.4.3.RELEASE</version>
                 <executions>
                     <execution>
                         <goals>

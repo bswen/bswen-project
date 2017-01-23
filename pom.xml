@@ -10,14 +10,10 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <mysql.version>5.1.38</mysql.version>
     </properties>
 
     <modules>
         <module>spring-boot-0726</module>
-        <module>spring-io-mvc-0728</module>
-        <module>spring-boot-0801</module>
-        <module>spring-boot-sample-web-jsp</module>
         <module>spring-boot-restful-0908</module>
         <module>java8-learning</module>
         <module>spring-boot-multidatasource</module>
@@ -25,6 +21,13 @@
         <module>spring-boot-retry</module>
     </modules>
     <packaging>pom</packaging>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-milestone</id>
+            <url>http://repo.spring.io/milestone</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <build>
         <plugins>
