@@ -22,6 +22,7 @@
         <module>java8-learning</module>
         <module>spring-boot-multidatasource</module>
         <module>spring-boot-unit-testing</module>
+        <module>spring-boot-retry</module>
     </modules>
     <packaging>pom</packaging>
 
