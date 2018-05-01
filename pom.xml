@@ -19,7 +19,6 @@
         <module>spring-boot-multidatasource</module>
         <module>spring-boot-unit-testing</module>
         <module>spring-boot-retry</module>
-        <module>spring-boot-retry-helloworld</module>
     </modules>
     <packaging>pom</packaging>
 
