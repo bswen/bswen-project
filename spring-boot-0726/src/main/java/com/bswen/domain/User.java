@@ -5,7 +5,6 @@ import java.util.Date;
 /**
  * for tbl_spboot_users
  * Created with IntelliJ IDEA.
- * User: zhaocw
  * Date: 15-7-27
  * Time: 下午5:02
  * To change this template use File | Settings | File Templates.

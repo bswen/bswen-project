@@ -6,7 +6,6 @@ import java.nio.charset.Charset;
 
 /**
  * Created with IntelliJ IDEA.
- * User: zhaocw
  * Date: 15-9-15
  * Time: 下午2:57
  * To change this template use File | Settings | File Templates.

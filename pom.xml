@@ -21,6 +21,7 @@
         <module>spring-boot-retry</module>
         <module>spring-boot-retry-helloworld</module>
         <module>spring-boot-async-helloworld</module>
+        <module>spring-boot-dynamic-datasource</module>
     </modules>
     <packaging>pom</packaging>
 

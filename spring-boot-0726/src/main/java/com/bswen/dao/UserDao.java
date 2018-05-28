@@ -14,7 +14,6 @@ import java.util.Map;
 
 /**
  * user corresponsd to tbl_spboot_users
- * User: zhaocw
  * Date: 15-7-27
  * Time: 下午5:00
  * To change this template use File | Settings | File Templates.

@@ -5,9 +5,9 @@ import java.util.List;
 import java.util.stream.Stream;
 
 /**
- * Created by zhaocw on 2017-1-19.
+ * Created by on 2017-1-19.
  *
- * @author zhaocw
+ * @author ddd
  */
 public class Main1 {
     public static void main(String[] args) {
