@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>springboot mybatis pageHelper and DataTable</title>
+    <script src="/webjars/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.css">
+
+    <meta http-equiv="cache-control" content="no-cache" />
+</head>
+<body>
+myTable is here:
+
+<table id="myTable" class="display">
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>Name</th>
+        <th>Branch</th>
+        <th>Percentage</th>
+        <th>Phone</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+<script>
+    $(document).ready(function() {
+        $('#myTable').DataTable({
+            "serverSide": true,
+            lengthChange : false,
+            ordering : false,
+            paging : true,
+            pagingType : "full_numbers",
+            processing : true,
+            autoWidth : true,
+            ajax: {
+                url: '/studentsApi/queryByPage',
+                dataSrc: 'data'
+            },
+
+            columns: [
+                { data: 'id' },
+                { data: 'name' },
+                { data: 'branch' },
+                { data: 'percentage' },
+                { data: 'phone' },
+                { data: 'email' }
+            ]
+        });
+    });
+</script>
+</body>
+</html>
