@@ -23,6 +23,7 @@
         <module>spring-boot-async-helloworld</module>
         <module>spring-boot-dynamic-datasource</module>
         <module>spring-boot-ignite-helloworld</module>
+        <module>spring-boot-issue1</module>
     </modules>
     <packaging>pom</packaging>
 
