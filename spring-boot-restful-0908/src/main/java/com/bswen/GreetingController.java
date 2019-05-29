@@ -11,7 +11,6 @@ import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * Created with IntelliJ IDEA.
- * User: zhaocw
  * Date: 15-9-8
  * Time: 下午4:31
  * To change this template use File | Settings | File Templates.
@@ -30,7 +29,7 @@ public class GreetingController {
     @RequestMapping("/enc")
     public Result enc(@RequestParam(value="key") String key) {
         try {
-            String result = EncryptUtils.hmac(key,"zhaocwzhaocwzhaocw");
+            String result = EncryptUtils.hmac(key,"ddaocwddaocwddaocw");
             return new Result(result);
         } catch (Exception e) {
             log.error("",e);

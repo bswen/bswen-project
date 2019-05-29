@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.bswen.sbmp.dao.StudentMapper" >
+    <!--<cache />-->
+    <resultMap id="baseResultMap" type="com.bswen.sbmp.domain.Student" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="phone" property="phone" jdbcType="VARCHAR" />
+        <result column="email" property="email" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <sql id="Base_Column_List" >
+        id, name, phone, email
+    </sql>
+
+    <select id="findByPage" resultMap="baseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from tbl_student
+    </select>
+</mapper>

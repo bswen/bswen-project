@@ -21,6 +21,11 @@
         <module>spring-boot-retry</module>
         <module>spring-boot-unit-testing-mockdao</module>
         <module>spring-boot-mybatis</module>
+        <module>spring-boot-retry-helloworld</module>
+        <module>spring-boot-async-helloworld</module>
+        <module>spring-boot-dynamic-datasource</module>
+        <module>spring-boot-ignite-helloworld</module>
+        <module>spring-boot-issue1</module>
     </modules>
     <packaging>pom</packaging>
 

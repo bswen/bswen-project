@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.bswen</groupId>
-    <artifactId>sprint-boot-dao</artifactId>
+    <artifactId>sprint-boot-sbdd.dao</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 <!--
