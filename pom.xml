@@ -19,6 +19,8 @@
         <module>spring-boot-multidatasource</module>
         <module>spring-boot-unit-testing</module>
         <module>spring-boot-retry</module>
+        <module>spring-boot-unit-testing-mockdao</module>
+        <module>spring-boot-mybatis</module>
     </modules>
     <packaging>pom</packaging>
 

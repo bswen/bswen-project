@@ -14,7 +14,7 @@ public class Main2 {
     public static void main(String[] args) {
         List<String> elements = constructList();
         //iterate over a list
-        elements.stream().forEach((String e)->System.out.println(e));
+        elements.stream().forEach(e->System.out.println(e));
         //iterate over a map
         Map<String,String> map = constructMap();
         map.keySet().stream().forEach(k-> System.out.println(k+"-->"+map.get(k)));
