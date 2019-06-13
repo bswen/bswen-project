@@ -27,6 +27,7 @@
         <module>spring-boot-ignite-helloworld</module>
         <module>spring-boot-issue1</module>
         <module>spring-boot-static-html</module>
+        <module>java-custom-annotation</module>
     </modules>
     <packaging>pom</packaging>
 
