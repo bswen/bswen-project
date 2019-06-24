@@ -28,6 +28,7 @@
         <module>spring-boot-issue1</module>
         <module>spring-boot-static-html</module>
         <module>java-custom-annotation</module>
+        <module>spring-boot-mvc-jackson</module>
     </modules>
     <packaging>pom</packaging>
 
