@@ -1,4 +1,4 @@
-package com.zhaocw.mapper;
+package com.bswen.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 

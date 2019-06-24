@@ -1,7 +1,6 @@
-package com.zhaocw;
+package com.bswen;
 
-import com.zhaocw.dao.ModelRiskDao;
-import org.apache.ibatis.logging.LogFactory;
+import com.bswen.dao.ModelRiskDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
