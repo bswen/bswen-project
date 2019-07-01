@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.Map;
 
 /**
- * Created by zhaocaiwen on 2017/3/15.
+ * Created by zz on 2017/3/15.
  */
 public class TestJwtOfAuth0 {
     private static final String THE_SECRET = "secret0";
@@ -21,7 +21,7 @@ public class TestJwtOfAuth0 {
             //create token
             Algorithm algorithm = Algorithm.HMAC256(THE_SECRET);
             String token = JWT.create()
-                    .withIssuer("zhaocw")
+                    .withIssuer("bswen")
                     .withClaim("key1","value1")
                     .withClaim("key2","value2")
                     .withIssuedAt(new Date())
@@ -30,7 +30,7 @@ public class TestJwtOfAuth0 {
 
             //Algorithm algorithm = Algorithm.HMAC256("secret");
             JWTVerifier verifier = JWT.require(algorithm)
-                    .withIssuer("zhaocw")
+                    .withIssuer("bswen")
                     .build(); //Reusable verifier instance
             DecodedJWT jwt = verifier.verify(token);
             System.out.println("alg="+jwt.getAlgorithm());

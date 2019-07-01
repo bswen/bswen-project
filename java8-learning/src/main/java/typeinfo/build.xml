@@ -26,8 +26,8 @@
     <javac
      classpath="${basedir}/.."
      srcdir="${basedir}/../typeinfo/pets/">
-      <compilerarg value="-Xmaxerrs"/>
-      <compilerarg value="10"/>
+      <compilerarg theValue="-Xmaxerrs"/>
+      <compilerarg theValue="10"/>
     </javac>
   </target>
 
@@ -35,8 +35,8 @@
     <javac
      classpath="${basedir}/.."
      srcdir="${basedir}/../net/mindview/util/">
-      <compilerarg value="-Xmaxerrs"/>
-      <compilerarg value="10"/>
+      <compilerarg theValue="-Xmaxerrs"/>
+      <compilerarg theValue="10"/>
     </javac>
   </target>
 
@@ -50,8 +50,8 @@
      classpath="${basedir}/.."
      debug="true"
      srcdir="${basedir}">
-      <compilerarg value="-Xmaxerrs"/>
-      <compilerarg value="10"/>
+      <compilerarg theValue="-Xmaxerrs"/>
+      <compilerarg theValue="10"/>
     </javac>
     <echo message="Build 'typeinfo' succeeded"/>
   </target>

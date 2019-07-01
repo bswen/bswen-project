@@ -30,8 +30,8 @@
     <javac
      classpath="${basedir}/.."
      srcdir="${basedir}/../net/mindview/util/">
-      <compilerarg value="-Xmaxerrs"/>
-      <compilerarg value="10"/>
+      <compilerarg theValue="-Xmaxerrs"/>
+      <compilerarg theValue="10"/>
     </javac>
   </target>
 
@@ -48,8 +48,8 @@
      classpath="${basedir}/.."
      debug="true"
      srcdir="${basedir}">
-      <compilerarg value="-Xmaxerrs"/>
-      <compilerarg value="10"/>
+      <compilerarg theValue="-Xmaxerrs"/>
+      <compilerarg theValue="10"/>
     </javac>
     <echo message="Build 'net' succeeded"/>
   </target>

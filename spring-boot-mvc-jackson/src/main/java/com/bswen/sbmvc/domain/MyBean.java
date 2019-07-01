@@ -1,6 +1,5 @@
 package com.bswen.sbmvc.domain;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonRootName;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
@@ -14,8 +13,8 @@ public class MyBean {
     private int id;
     private String name;
 
-    //@JsonSerialize(using = CustomDateSerializer.class) //not valid
-    @JsonFormat(pattern = "yyyyMMddHHmmss")
+    @JsonSerialize(using = CustomDateSerializer.class) //not valid
+    //@JsonFormat(pattern = "yyyyMMddHHmmss")
     private Date bornDate;
 
     private Date marryDate;
