@@ -40,6 +40,8 @@ public class MyController {
         result.setAttr1("value1");
         result.setAttr2("value2");
 
+        result.setCountry("China");
+
         result.setTheDate(new Date());
         return result;
     }

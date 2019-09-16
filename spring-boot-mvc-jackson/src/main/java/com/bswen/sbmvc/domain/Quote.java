@@ -1,5 +1,7 @@
 package com.bswen.sbmvc.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.Date;
 
 /**
@@ -12,12 +14,22 @@ import java.util.Date;
      }
  }
  */
+@JsonIgnoreProperties({ "attr2" })
 public class Quote {
     private String type;
     private Value theValue;
     private String attr1;
     private String attr2;
     private Date theDate;
+    private String country;
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
 
     public Date getTheDate() {
         return theDate;

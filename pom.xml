@@ -30,6 +30,8 @@
         <module>java-custom-annotation</module>
         <module>spring-boot-mvc-jackson</module>
         <module>spring-boot-rest-client</module>
+        <module>spring-mvc-jsp</module>
+        <module>spring-boot-powerpoint</module>
     </modules>
     <packaging>pom</packaging>
 

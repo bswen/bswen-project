@@ -56,7 +56,7 @@ public class Quote {
         this.otherProps = otherProps;
     }
 
-    @JsonAnySetter
+    //@JsonAnySetter
     public void add(String key, String value) {
         otherProps.put(key, value);
     }

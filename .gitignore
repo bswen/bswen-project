@@ -15,3 +15,4 @@
 /spring-boot-multidatasource/*.log
 *.log
 /spring-boot-retry/target/classes
+/spring-boot-powerpoint
