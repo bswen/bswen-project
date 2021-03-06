@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 import java.util.concurrent.CountDownLatch;
 
 @Component
-public class MultiRedisTestRunner implements CommandLineRunner {
+public class MultiRedisTestRunner /*implements CommandLineRunner*/ {
     private final static Logger logger = LoggerFactory.getLogger(MultiRedisApplication.class);
 
     @Autowired
@@ -22,9 +22,9 @@ public class MultiRedisTestRunner implements CommandLineRunner {
     @Qualifier("redis2StringRedisTemplate")
     private StringRedisTemplate roleStringRedisTemplate;
 
-    @Override
+    //@Override
     public void run(String... strings) throws Exception {
-        CountDownLatch latch = new CountDownLatch(1);
+        //CountDownLatch latch = new CountDownLatch(1);
         try {
             for (int i = 0; i < 10; i++) {
                 logger.info("=====================================================================");
@@ -41,7 +41,7 @@ public class MultiRedisTestRunner implements CommandLineRunner {
                 logger.info(String.format("read from the redis2, key %s value is %s", key, secondaryKeyValue));
             }
         }finally {
-            latch.await();
+            //latch.await();
         }
 
         // you can also check the value with redis-cli
