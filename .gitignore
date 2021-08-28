@@ -16,3 +16,4 @@
 *.log
 /spring-boot-retry/target/classes
 /spring-boot-powerpoint
+/spring-boot-applicationxml/src/main/resources/jdbc.properties.working

@@ -1,0 +1,4 @@
+jdbc.driverClassName=com.mysql.jdbc.Driver
+jdbc.url=jdbc:mysql://10.21.171.164:31318/zzz_testdb1?useUnicode=yes&amp;characterEncoding=UTF-8
+jdbc.username=root
+jdbc.password=iNMS@52

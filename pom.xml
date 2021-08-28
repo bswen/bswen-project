@@ -35,6 +35,7 @@
         <module>spring-boot-multiredis</module>
         <module>spring-boot-multiredis2</module>
         <module>spring-boot-jasypt</module>
+        <module>spring-boot-applicationxml</module>
     </modules>
     <packaging>pom</packaging>
 
