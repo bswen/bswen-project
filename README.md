@@ -1,5 +1,5 @@
 # bswen-project
-code for www.bswen.com 
+code examples for www.bswen.com 
 visit: https://bswen.com
 
 usage:
