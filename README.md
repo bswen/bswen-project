@@ -1,6 +1,6 @@
 # bswen-project
-code examples for www.bswen.com or bswen.com 
-visit: https://bswen.com
+code examples for [bswen.com](https://www.bswen.com) 
+visit: https://www.bswen.com
 
 usage:
 mvn clean spring-boot:run
