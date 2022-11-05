@@ -1,1 +1,1 @@
-- [How to use applicationContext.xml in springboot and how to override bean values](https://bswen.com/2021/08/springboot-How-to-use-applicationContext-xml-with-springboot.html)
+- [How to use applicationContext.xml in springboot and how to override bean values](https://www.bswen.com/2021/08/springboot-How-to-use-applicationContext-xml-with-springboot.html)
