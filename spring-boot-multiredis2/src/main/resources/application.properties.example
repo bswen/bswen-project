@@ -1,7 +1,7 @@
-spring.redis.host=192.168.11.21
+spring.redis.host=192.168.1.1
 spring.redis.port=6381
 spring.redis.database=0
 
-spring.redis2.host=192.168.11.21
+spring.redis2.host=192.168.2.2
 spring.redis2.port=6383
 spring.redis2.database=0

@@ -18,15 +18,46 @@ public class MultiRedisTestRunner implements CommandLineRunner {
     @Qualifier("redis1StringRedisTemplate")
     private StringRedisTemplate stringRedisTemplate;
 
+    @Autowired
+    @Qualifier("redis2StringRedisTemplate")
+    private StringRedisTemplate stringRedis2Template;
+
     //@Override
     public void run(String... strings) throws Exception {
         CountDownLatch latch = new CountDownLatch(1);
         try {
-            for (int i = 0; i < 1; i++) {
+            testRedis1();
+            testRedis2();
+        }finally {
+            latch.await();
+        }
+    }
+
+    private void testRedis2() {
+        try {
+            for (int i = 1; i < 2; i++) {
                 logger.info("=====================================================================");
-                logger.info("start loop " + i);
-                String key = "key" + i;
-                stringRedisTemplate.opsForValue().set(key, "value" + i);
+                logger.info("start loop redis 2:" + i);
+                String key = "k" + i;
+                //stringRedisTemplate.opsForValue().set(key, "value" + i);
+
+                String primaryKeyValue = stringRedis2Template.opsForValue().get(key);
+
+                logger.info("=====================================================================");
+                logger.info(String.format("read from the redis2, key %s value is %s", key, primaryKeyValue));
+            }
+        }finally {
+
+        }
+    }
+
+    private void testRedis1() {
+        try {
+            for (int i = 1; i < 2; i++) {
+                logger.info("=====================================================================");
+                logger.info("start loop redis 1:" + i);
+                String key = "k" + i;
+                //stringRedisTemplate.opsForValue().set(key, "value" + i);
 
                 String primaryKeyValue = stringRedisTemplate.opsForValue().get(key);
 
@@ -34,7 +65,6 @@ public class MultiRedisTestRunner implements CommandLineRunner {
                 logger.info(String.format("read from the redis1, key %s value is %s", key, primaryKeyValue));
             }
         }finally {
-            latch.await();
         }
     }
 }

@@ -12,16 +12,16 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
 @Configuration
-public class Redis1Configuration {
+public class Redis2Configuration {
 
     @Autowired
-    private Redis1Property redis1Property;
+    private Redis2Property redis2Property;
 
     @Primary
-    @Bean(name = "redis1ConnectionFactory")
+    @Bean(name = "redis2ConnectionFactory")
     public RedisConnectionFactory userRedisConnectionFactory() {
         RedisStandaloneConfiguration config = new RedisStandaloneConfiguration(
-                redis1Property.getHost(), redis1Property.getPort());
+                redis2Property.getHost(), redis2Property.getPort());
         return new JedisConnectionFactory(config);
     }
 
@@ -33,15 +33,15 @@ public class Redis1Configuration {
 //        return jedisPoolConfig;
 //    }
 
-    @Bean(name = "redis1StringRedisTemplate")
-    public StringRedisTemplate userStringRedisTemplate(@Qualifier("redis1ConnectionFactory") RedisConnectionFactory cf) {
+    @Bean(name = "redis2StringRedisTemplate")
+    public StringRedisTemplate userStringRedisTemplate(@Qualifier("redis2ConnectionFactory") RedisConnectionFactory cf) {
         StringRedisTemplate stringRedisTemplate = new StringRedisTemplate();
         stringRedisTemplate.setConnectionFactory(cf);
         return stringRedisTemplate;
     }
 
-    @Bean(name = {"redis1RedisTemplate","redisTemplate"})
-    public RedisTemplate userRedisTemplate(@Qualifier("redis1ConnectionFactory") RedisConnectionFactory cf) {
+    @Bean(name = "redis2RedisTemplate")
+    public RedisTemplate userRedisTemplate(@Qualifier("redis2ConnectionFactory") RedisConnectionFactory cf) {
         StringRedisTemplate stringRedisTemplate = new StringRedisTemplate();
         stringRedisTemplate.setConnectionFactory(cf);
         //setSerializer(stringRedisTemplate);
